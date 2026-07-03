@@ -20,11 +20,11 @@ test("Create POST api request using JSON file in playwright", async ({
 
   expect(postAPIResponseBody.booking).toHaveProperty(
     "firstname",
-    "testers talk playwright"
+    "akhila playwright"
   );
   expect(postAPIResponseBody.booking).toHaveProperty(
     "lastname",
-    "testers talk api testing"
+    "akhila api testing"
   );
 
   // validate api response nested json obj
