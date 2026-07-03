@@ -6,8 +6,8 @@ test("Create POST api request using static request body in playwright", async ({
   // create post api request using playwright
   const postAPIResponse = await request.post("/booking", {
     data: {
-      firstname: "testers talk playwright",
-      lastname: "testers talk api testing",
+      firstname: "akhila playwright",
+      lastname: "akhila api testing",
       totalprice: 1000,
       depositpaid: true,
       bookingdates: {
@@ -29,11 +29,11 @@ test("Create POST api request using static request body in playwright", async ({
 
   expect(postAPIResponseBody.booking).toHaveProperty(
     "firstname",
-    "testers talk playwright"
+    "akhila playwright"
   );
   expect(postAPIResponseBody.booking).toHaveProperty(
     "lastname",
-    "testers talk api testing"
+    "akhila api testing"
   );
 
   // validate api response nested json obj
