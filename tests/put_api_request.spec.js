@@ -16,8 +16,8 @@ test("Query parameter in playwright api testing", async ({ request }) => {
   // create GET api request using playwright
   const getAPIResponse = await request.get("/booking/", {
     params: {
-      firstname: "testers talk playwright",
-      lastname: "testers talk api testing",
+      firstname: "akhila playwright",
+      lastname: "akhila api testing",
     },
   });
 
